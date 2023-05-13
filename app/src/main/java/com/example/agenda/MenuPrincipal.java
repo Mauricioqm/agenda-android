@@ -23,6 +23,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.agenda.AgregarNota.Agregar_Nota;
+import com.example.agenda.Contactos.Listar_contactos;
+import com.example.agenda.ListarNotas.Listar_Notas;
+import com.example.agenda.NotasImportantes.Notas_Importantes;
 import com.example.agenda.Perfil.Perfil_Usuario;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -116,10 +120,10 @@ public class MenuPrincipal extends AppCompatActivity {
         String correo_usuario = CorreoPrincipal.getText().toString();
 
         //Pasamos a la siguiente actividad
-        /*Intent intent = new Intent(MenuPrincipal.this, Agregar_Nota.class);
+        Intent intent = new Intent(MenuPrincipal.this, Agregar_Nota.class);
         intent.putExtra("Uid",uid_usuario);
         intent.putExtra("Correo",correo_usuario);
-        startActivity(intent);*/
+        startActivity(intent);
 
       }
     });
@@ -127,27 +131,27 @@ public class MenuPrincipal extends AppCompatActivity {
     ListarNotas.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        //startActivity(new Intent(MenuPrincipal.this, Listar_Notas.class));
-        //Toast.makeText(MenuPrincipal.this, "Listar Notas", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MenuPrincipal.this, Listar_Notas.class));
+        Toast.makeText(MenuPrincipal.this, "Listar Notas", Toast.LENGTH_SHORT).show();
       }
     });
 
     Importantes.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        //startActivity(new Intent(MenuPrincipal.this, Notas_Importantes.class));
-        //Toast.makeText(MenuPrincipal.this, "Notas Archivadas", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(MenuPrincipal.this, Notas_Importantes.class));
+        Toast.makeText(MenuPrincipal.this, "Notas Archivadas", Toast.LENGTH_SHORT).show();
       }
     });
 
     Contactos.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        //String uid_Usuario =UidPrincipal.getText().toString();
-        //Intent intent = new Intent(MenuPrincipal.this, Listar_Contactos.class);
-        //intent.putExtra("Uid", uid_Usuario);
-        //startActivity(intent);
-        //Toast.makeText(MenuPrincipal.this, "Contactos", Toast.LENGTH_SHORT).show();
+        String uid_Usuario =UidPrincipal.getText().toString();
+        Intent intent = new Intent(MenuPrincipal.this, Listar_contactos.class);
+        intent.putExtra("Uid", uid_Usuario);
+        startActivity(intent);
+        Toast.makeText(MenuPrincipal.this, "Contactos", Toast.LENGTH_SHORT).show();
       }
     });
 
