@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contactos.Actualizar_Contacto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/portada_contacto_nueve"
+                android:scaleType="centerCrop">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Imagen_C_A"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="#E55100"
+                android:layout_marginTop="120dp"
+                android:layout_marginStart="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagen_contacto"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Actualizar_imagen_C_A"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/editar_imagen_perfil">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+        </RelativeLayout>
+
+        <!--Actualizar Datos del usuario-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--Id-->
+            <TextView
+                android:id="@+id/Id_C_A"
+                android:text="@string/Id_C_A"
+                android:fontFamily="@font/worksans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--Uid-->
+            <TextView
+                android:id="@+id/Uid_C_A"
+                android:text="@string/Uid_C_A"
+                android:fontFamily="@font/worksans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--Nombres-->
+            <EditText
+                android:id="@+id/Nombres_C_A"
+                android:hint="@string/Nombres_C_A"
+                android:inputType="textCapWords|textPersonName"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--Apellidos-->
+            <EditText
+                android:id="@+id/Apellidos_C_A"
+                android:hint="@string/Apellidos_C_A"
+                android:inputType="textCapWords|textPersonName"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--Correo-->
+            <EditText
+                android:id="@+id/Correo_C_A"
+                android:hint="@string/Correo_C_A"
+                android:inputType="textCapWords|text"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <!--Domicilio-->
+            <EditText
+                android:id="@+id/Direccion_C_A"
+                android:hint="@string/Direccion_C_A"
+                android:inputType="textCapWords|text"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--Institucion-->
+            <EditText
+                android:id="@+id/Institucion_C_A"
+                android:hint="@string/Institucion_C_A"
+                android:inputType="textCapWords|text"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--Edad-->
+            <EditText
+                android:id="@+id/Edad_C_A"
+                android:hint="@string/Edad_C_A"
+                android:inputType="number"
+                android:fontFamily="@font/worksans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <!--FECHA DE NACIMIENTO-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/Fecha_Nacimiento_C_A"
+                    android:hint="@string/Fecha_Nacimiento_C_A"
+                    android:fontFamily="@font/worksans"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/Actualizar_fecha_C_A"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/calendario">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <!--TELEFONO-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <!--Telefono-->
+                <TextView
+                    android:id="@+id/Telefono_C_A"
+                    android:hint="@string/Telefono_C_A"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/worksans"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/Actualizar_Telefono_C_A"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/editar_telefono"
+                    />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <!--Actualizar Datos Contacto-->
+        <Button
+            android:id="@+id/Btn_Actualizar_C_A"
+            android:text="@string/Btn_Actualizar_C_A"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>
